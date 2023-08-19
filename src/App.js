@@ -15,6 +15,8 @@ import ClientTesti from "./components/ClientTesti";
 import AdvisorX from "./components/AdvisorX";
 import Refund from "./components/common/Refund";
 import PrivacyPolicy from "./components/common/PrivacyPolicy";
+import Index from "./components/index/Index";
+// import  from "./components/index/Index"
 // import Navigation from "./components/common/Navigation";
 
 function App() {
@@ -24,6 +26,7 @@ function App() {
         {/* <Navbar /> */}
 
         <Routes>
+          <Route exact path={"/"} element={<Index />} />
           <Route exact path={"/advisorX"} element={<AdvisorX />} />
           <Route exact path={"/clientTesti"} element={<ClientTesti />} />
           <Route exact path={"/payonline"} element={<PayOnline />} />

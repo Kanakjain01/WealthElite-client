@@ -9,8 +9,8 @@ const Investor = (props) => {
 
       {/* <!---------------------------------- SECOND ----------------------------> */}
 
-      <div class="bg-green-50 pb-2 pt-16 lg:shadow-inner lg:pb-12 overflow-hidden ">
-        <div class="mx-auto w-96 rounded-xl border-2 border-green-500 shadow-2xl shadow-green-800 lg:flex  lg:w-3/4 lg:-mt-8 lg:h-1/2 ">
+      <div class={` ${props.page=="ifa"?"bg-red-50":props.page=="corporate"?"bg-blue-50":props.page=="backoffice"?"bg-yellow-50":props.page=="branch"?"bg-pink-50":"bg-gray-50"}  pb-2 pt-16 lg:shadow-inner lg:pb-12 overflow-hidden `}>
+        <div class={`mx-auto w-96 rounded-xl border-2  ${props.page=="ifa"?"bg-red-500":props.page=="corporate"?"bg-blue-500":props.page=="backoffice"?"bg-yellow-500":props.page=="branch"?"bg-pink-500":"bg-gray-500"} shadow-2xl shadow-green-800 lg:flex  lg:w-3/4 lg:-mt-8 lg:h-1/2 `}>
           <div class="rounded-xl bg-slate-100 lg:w-[55%]  ">
             <img
               class=""

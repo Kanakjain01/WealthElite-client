@@ -5,7 +5,7 @@ const IFA = () => {
   return (
     <div>
       
-        <Investor img="https://wealthelite.in/website/dist/img/ifa-login-img.webp" title="IFA Login"/>
+        <Investor img="https://wealthelite.in/website/dist/img/ifa-login-img.webp" title="IFA Login" page="ifa"/>
     </div>
   )
 }
