@@ -4,7 +4,7 @@ import Investor from '../../common/Investor'
 const Branch = () => {
   return (
     <div>
-        <Investor/>
+        <Investor img="https://wealthelite.in/website/dist/img/branch-login-img.webp" title="Branch Login"/>
     </div>
   )
 }

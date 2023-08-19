@@ -2,7 +2,7 @@ import React from "react";
 import Footer from "./common/Footer";
 import Navbar from "./common/Navbar";
 
-const AdvisorX = (props) => {
+const AdvisorX = () => {
   return (
     <div>
       {/* <!-- FIRST --> */}

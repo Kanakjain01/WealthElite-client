@@ -4,7 +4,8 @@ import Investor from '../../common/Investor'
 const IFA = () => {
   return (
     <div>
-        <Investor/>
+      
+        <Investor img="https://wealthelite.in/website/dist/img/ifa-login-img.webp" title="IFA Login"/>
     </div>
   )
 }

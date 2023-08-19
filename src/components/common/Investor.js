@@ -1,7 +1,7 @@
 import React from "react";
 import Navigation from "./Navigation";
 
-const Investor = () => {
+const Investor = (props) => {
   return (
     <div>
       {/* <!----------------------------------- FIRST--------------------------- --> */}
@@ -12,16 +12,16 @@ const Investor = () => {
       <div class="bg-green-50 pb-2 pt-16 lg:shadow-inner lg:pb-12">
         <div class="mx-auto w-96 rounded-xl border-2 border-green-500 shadow-2xl shadow-green-800 lg:flex  lg:w-3/4 lg:-mt-8 lg:h-1/2 ">
           <div class="rounded-xl bg-slate-100 lg:w-[55%]  ">
-            <img
+            <img 
               class=""
-              src="https://wealthelite.in/website/dist/img/investor-login-img.webp"
+              src= {props.img}
               alt=""
             />
           </div>
           <div class="rounded-b-2xl bg-white pb-36 pt-32 lg:w-[45%] lg:pt-20 lg:pb-20  ">
             <div class="text-center ">
               <h1 class="text-3xl font-bold text-green-600 lg:text-2xl lg:font-semibold lg:-ml-32">
-                Investor Login
+               {props.title}
               </h1>
             </div>
             <div class="mx-auto mt-7 w-52 lg:mt-5">

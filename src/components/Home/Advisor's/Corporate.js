@@ -4,7 +4,7 @@ import Investor from '../../common/Investor'
 const Corporate = () => {
   return (
     <div>
-        <Investor/>
+        <Investor img="https://wealthelite.in/website/dist/img/corporate-login-img.webp" title="Corporate Login"/>
     </div>
   )
 }
