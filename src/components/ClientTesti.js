@@ -6,7 +6,7 @@ const ClientTesti = () => {
   return (
     <div>
       {/* <!----------------------------------- FIRST--------------------------- --> */}
-     <Navbar/>
+      <Navbar />
 
       {/* <!---------------------------------- SECOND ----------------------------> */}
       <div class="mt-7 lg:w-[100%]">
@@ -18,7 +18,7 @@ const ClientTesti = () => {
       </div>
 
       {/* <!-- THIRD --> */}
-      <div class="mt-24 pb-28 lg:mx-16 lg:-mb-4">
+      <div class="mt-24 pb-28 lg:mx-16 lg:-mb-4 ">
         <div class="mx-auto w-11/12">
           <h1 class="text-xl font-semibold tracking-widest text-gray-500 lg:text-base ">
             <u> VIDEO TESTIMONIALS</u>
@@ -30,7 +30,7 @@ const ClientTesti = () => {
         <div class="mt-2  ">
           <div class="lg:flex lg:w-[100%] lg:mx-7   ">
             <div class="mx-7 rounded-md border-2 pb-4 mt-14 lg:w-[30%] cursor-pointer hover:opacity-100   ">
-              <div class="img1 lg:w-[100%] lg:h-48 ">
+              <div class="img1 w-[100%]  lg:h-48 ">
                 <img
                   class="mx-auto pt-24 lg:pt-14 hover:scale-y-95 hover:scale-x-95  "
                   src="https://wealthelite.in/website/images/testimony/play-icon.png"
@@ -103,7 +103,7 @@ const ClientTesti = () => {
         </div>
       </div>
       {/* <!----------------------------------LAST-------------------------------------> */}
-      <Footer/>
+      <Footer />
     </div>
   );
 };

@@ -78,10 +78,10 @@ const PayOnline = () => {
       </div>
 
       {/* <!-- FOURTH --> */}
-      <div class="mx-auto mt-11 w-[100%] lg:w-11/12">
-        <h1 class="mx-auto w-11/12 rounded-xl border-2 bg-black px-3 py-6 text-center text-3xl leading-tight text-white lg:text-lg lg:py-4">
+      <div class=" mt-11 w-[100%] lg:px-14 ">
+        <h1 class=" mx-auto w-11/12 rounded-xl border-2 bg-black  py-6 text-center text-xl leading-tight text-white lg:text-lg">
           NOTE: Please share the payment screenshot with us at{" "}
-          <a class="text-lime-500"> accounts@redvisionglobal.com</a> for
+          <a class="text-lime-500 "> accounts@redvisionglobal.com</a> for
           confirming your payment status.
         </h1>
       </div>

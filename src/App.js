@@ -13,6 +13,8 @@ import Navbar from "./components/common/Navbar";
 import PayOnline from "./components/PayOnline";
 import ClientTesti from "./components/ClientTesti";
 import AdvisorX from "./components/AdvisorX";
+import Refund from "./components/common/Refund";
+import PrivacyPolicy from "./components/common/PrivacyPolicy";
 // import Navigation from "./components/common/Navigation";
 
 function App() {
@@ -31,9 +33,13 @@ function App() {
           <Route exact path={"/backoffice"} element={<BackOffice />} />
           <Route exact path={"/subbroker"} element={<SubBroker />} />
           <Route exact path={"/branch"} element={<Branch />} />
+          <Route exact path={"/privacypolicy"} element={<PrivacyPolicy />} />
+          <Route exact path={"/refundpolicy"} element={<Refund />} />
           {/* <Investor title="Hello world" /> */}
         </Routes>
         {/* <Footer /> */}
+        {/* <PrivacyPolicy/> */}
+        {/* <Refund/> */}
       </Router>
     </div>
   );

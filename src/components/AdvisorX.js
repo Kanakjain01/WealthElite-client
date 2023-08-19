@@ -7,7 +7,7 @@ const AdvisorX = () => {
     <div>
       {/* <!-- FIRST --> */}
       <div class="bg-gradient-to-b from-indigo-100 via-indigo-400 to-indigo-400 pb-20">
-       <Navbar/>
+        <Navbar />
 
         {/* <!-- SECOND  --> */}
         <div class="mt-44 w-[100%] lg:flex lg:w-[100%] lg:flex-row-reverse lg:px-16">
@@ -366,7 +366,7 @@ const AdvisorX = () => {
 
       {/* <!-- SIXTH --> */}
       <div class="mt-48">
-        <div class="mx-auto w-11/12">
+        <div class="mx-auto w-11/12 lg:ml-24">
           <h1 class="text-xl font-medium tracking-widest text-gray-500 lg:text-sm">
             TESTIMONIALS
           </h1>
@@ -374,11 +374,11 @@ const AdvisorX = () => {
             WHAT THEY ARE SAYING ABOUT US
           </p>
         </div>
-        <div class="mt-32 lg:mt-24">
-          <div class="bg-gray-50 pt-16 mx-auto w-5/6 shadow-2xl lg:w-96 hover:opacity-75 cursor-pointer">
+        <div class="mt-32 lg:mt-24 ">
+          <div class="bg-gray-50 pt-16 mx-auto w-5/6 shadow-2xl lg:w-96 hover:opacity-75 cursor-pointer pb-7 ">
             <figure class="text-center mx-auto w-64 lg:-mt-9">
               <svg
-                class="w-10 lg:w-6 "
+                class="w-7 lg:w-6 "
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 448 512"
               >
@@ -398,7 +398,7 @@ const AdvisorX = () => {
                 </p>
               </blockquote>
               <svg
-                class="w-10 mx-64 -mt-6 lg:w-6"
+                class="w-7 mx-60 -mt-6 lg:w-6"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 448 512"
               >
@@ -429,7 +429,7 @@ const AdvisorX = () => {
         </div>
       </div>
       {/* <!----------------------------------LAST-------------------------------------> */}
-    <Footer/>
+      <Footer />
     </div>
   );
 };

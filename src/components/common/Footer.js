@@ -3,7 +3,7 @@ import React from "react";
 const Footer = () => {
   return (
     <div>
-      <div class="bg-gray-900 pb-5 pt-32 ">
+      <div class="bg-gray-900 pb-5 pt-32 mt-20 overflow-hidden">
         <div class="lg:-mt-10 lg:flex lg:w-[100%] lg:justify-center">
           <div class="left lg:w-[55%]">
             <div class="mx-auto grid w-5/6 grid-cols-2 gap-8 sm:grid-cols-3 sm:gap-6">
@@ -65,7 +65,7 @@ const Footer = () => {
                   Social
                 </h1>
               </div>
-              <div class="w=[100%] mx-32 mt-12 flex justify-evenly lg:mx-80">
+              <div class="w-[100%]  mt-12 flex justify-evenly lg:px-72">
                 <div class="w-14 rounded-full border-4 border-blue-500 px-2 py-2">
                   <img
                     class=""

@@ -5,26 +5,26 @@ const Investor = (props) => {
   return (
     <div>
       {/* <!----------------------------------- FIRST--------------------------- --> */}
-     <Navigation/>
+      <Navigation />
 
       {/* <!---------------------------------- SECOND ----------------------------> */}
 
-      <div class="bg-green-50 pb-2 pt-16 lg:shadow-inner lg:pb-12">
+      <div class="bg-green-50 pb-2 pt-16 lg:shadow-inner lg:pb-12 overflow-hidden ">
         <div class="mx-auto w-96 rounded-xl border-2 border-green-500 shadow-2xl shadow-green-800 lg:flex  lg:w-3/4 lg:-mt-8 lg:h-1/2 ">
           <div class="rounded-xl bg-slate-100 lg:w-[55%]  ">
-            <img 
+            <img
               class=""
-              src= {props.img}
+              src={props.img}
               alt=""
             />
           </div>
-          <div class="rounded-b-2xl bg-white pb-36 pt-32 lg:w-[45%] lg:pt-20 lg:pb-20  ">
-            <div class="text-center ">
+          <div class="rounded-b-2xl bg-white pb-36 pt-32 lg:w-[45%] lg:pt-20 lg:pb-20   ">
+            <div class="text-center  ">
               <h1 class="text-3xl font-bold text-green-600 lg:text-2xl lg:font-semibold lg:-ml-32">
                {props.title}
               </h1>
             </div>
-            <div class="mx-auto mt-7 w-52 lg:mt-5">
+            <div class="mx-auto mt-7 w-52 lg:mt-5 ">
               <div class="flex w-52 border border-green-500 lg:w-72 lg:h-12 lg:-ml-10 ">
                 <span class="inline-flex w-14 items-center border bg-green-100 px-3 text-gray-900 dark:text-gray-400 lg:w-11 ">
                   <svg
@@ -64,7 +64,7 @@ const Investor = (props) => {
                 />
               </div>
             </div>
-            <div class="mx-6 mt-7 flex w-[100%] justify-between px-14 lg:px-24 lg:-ml-0">
+            <div class="mx-6 mt-7 flex  justify-between px-14 ">
               <div class="mb-6 flex w-[45%] items-start">
                 <div class="flex h-5 items-center">
                   <input
@@ -82,13 +82,13 @@ const Investor = (props) => {
                   Remember me
                 </label>
               </div>
-              <div class="w-[45%] cursor-pointer">
+              <div class="w-[45%] -mr-4 cursor-pointer">
                 <h1 class="font-medium text-green-600 lg:text-sm">
                   Forgot Password ?
                 </h1>
               </div>
             </div>
-            <div class="mx-20 mt-3 w-24 rounded bg-green-600 py-3 text-center lg:w-16 lg:py-2 lg:mx-24 ">
+            <div class="mx-20  mt-3 w-24 rounded bg-green-600 py-3 text-center lg:w-16 lg:py-2  ">
               <button class="text-2xl text-white lg:text-base">Login</button>
             </div>
           </div>
