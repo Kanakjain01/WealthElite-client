@@ -1,5 +1,5 @@
 import React from 'react'
-import Investor from '../../common/Investor'
+import Investor from '../common/Investor'
 
 const SubBroker = () => {
   return (

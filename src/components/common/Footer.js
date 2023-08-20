@@ -9,7 +9,7 @@ const Footer = () => {
             <div class="mx-auto grid w-5/6 grid-cols-2 gap-8 sm:grid-cols-3 sm:gap-6">
               <div>
                 <h2 class="mb-6 text-3xl font-semibold dark:text-white lg:text-xl">
-                  Quick Links
+                  Quick 
                 </h2>
                 <ul class="font-medium text-gray-300 lg:text-sm">
                   <li class="mb-4">

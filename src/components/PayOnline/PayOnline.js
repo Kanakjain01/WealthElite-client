@@ -1,6 +1,6 @@
 import React from "react";
-import Footer from "./common/Footer";
-import Navigation from "./common/Navigation";
+import Footer from "../common/Footer";
+import Navigation from "../common/Navigation";
 
 const PayOnline = () => {
   return (
