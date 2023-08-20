@@ -9,23 +9,99 @@ const Investor = (props) => {
 
       {/* <!---------------------------------- SECOND ----------------------------> */}
 
-      <div class={` ${props.page=="ifa"?"bg-red-50":props.page=="corporate"?"bg-blue-50":props.page=="backoffice"?"bg-yellow-50":props.page=="branch"?"bg-pink-50":"bg-gray-50"}  pb-2 pt-16 lg:shadow-inner lg:pb-12 overflow-hidden `}>
-        <div class={`mx-auto w-96 rounded-xl border-2  ${props.page=="ifa"?"bg-red-500":props.page=="corporate"?"bg-blue-500":props.page=="backoffice"?"bg-yellow-500":props.page=="branch"?"bg-pink-500":"bg-gray-500"} shadow-2xl shadow-green-800 lg:flex  lg:w-3/4 lg:-mt-8 lg:h-1/2 `}>
-          <div class="rounded-xl bg-slate-100 lg:w-[55%]  ">
-            <img
-              class=""
-              src={props.img}
-              alt=""
-            />
+      <div
+        class={` ${
+          props.page == "ifa"
+            ? "bg-slate-100"
+            : props.page == "corporate"
+            ? "bg-sky-100"
+            : props.page == "backoffice"
+            ? "bg-amber-50"
+            : props.page == "branch"
+            ? "bg-purple-200"
+            : props.page == "subbroker"
+            ? "bg-orange-100"
+            : ""
+        }  pb-2 pt-16 lg:shadow-inner lg:pb-12 overflow-hidden `}
+      >
+        <div
+          class={`mx-auto w-96 rounded-xl border-2  ${
+            props.page == "ifa"
+              ? "shadow-slate-500"
+              : props.page == "corporate"
+              ? "shadow-sky-200"
+              : props.page == "backoffice"
+              ? "shadow-amber-100"
+              : props.page == "branch"
+              ? "shadow-purple-400"
+              : props.page == "subbroker"
+              ? "shadow-orange-300"
+              : ""
+          } shadow-2xl  ${
+            props.page == "ifa"
+              ? "border-slate-100"
+              : props.page == "corporate"
+              ? "border-sky-200"
+              : props.page == "backoffice"
+              ? "border-amber-700"
+              : props.page == "branch"
+              ? "border-purple-500"
+              : props.page == "subbroker"
+              ? "border-orange-600"
+              : ""
+          } lg:flex  lg:w-3/4 lg:-mt-8 lg:h-1/2 `}
+        >
+          <div
+            class={`rounded-xl  ${
+              props.page == "ifa"
+                ? "bg-slate-100"
+                : props.page == "corporate"
+                ? "bg-sky-50"
+                : props.page == "backoffice"
+                ? "bg-amber-50"
+                : props.page == "branch"
+                ? "bg-purple-50"
+                : props.page == "subbroker"
+                ? "bg-orange-50"
+                : ""
+            }  lg:w-[55%]  `}
+          >
+            <img class="" src={props.img} alt="" />
           </div>
           <div class="rounded-b-2xl bg-white pb-36 pt-32 lg:w-[45%] lg:pt-20 lg:pb-20   ">
             <div class="text-center  ">
-              <h1 class="text-3xl font-bold text-green-600 lg:text-2xl lg:font-semibold lg:-ml-32">
-               {props.title}
+              <h1
+                class={`text-3xl font-bold  ${
+                  props.page == "ifa"
+                    ? "text-blue-600"
+                    : props.page == "corporate"
+                    ? "text-sky-400"
+                    : props.page == "backoffice"
+                    ? "text-amber-800"
+                    : props.page == "branch"
+                    ? "text-purple-700"
+                    : props.page == "subbroker"
+                    ? "text-orange-400"
+                    : ""
+                }  lg:text-2xl lg:font-semibold lg:-ml-32`}
+              >
+                {props.title}
               </h1>
             </div>
             <div class="mx-auto mt-7 w-52 lg:mt-5 ">
-              <div class="flex w-52 border border-green-500 lg:w-72 lg:h-12 lg:-ml-10 ">
+              <div class={`flex w-52 border ${
+                  props.page == "ifa"
+                    ? "border-blue-500"
+                    : props.page == "corporate"
+                    ? "border-sky-400"
+                    : props.page == "backoffice"
+                    ? "border-amber-800"
+                    : props.page == "branch"
+                    ? "border-purple-700"
+                    : props.page == "subbroker"
+                    ? "border-orange-400"
+                    : ""
+                }   lg:w-72 lg:h-12 lg:-ml-10 `}>
                 <span class="inline-flex w-14 items-center border bg-green-100 px-3 text-gray-900 dark:text-gray-400 lg:w-11 ">
                   <svg
                     class="w-7 lg:w-5"
