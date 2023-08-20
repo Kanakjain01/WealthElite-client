@@ -1,30 +1,24 @@
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import "./App.css";
-import IFA from "./components/Home/Advisor's/IFA";
-import Corporate from "./components/Home/Advisor's/Corporate";
-import BackOffice from "./components/Home/Advisor's/BackOffice";
-import SubBroker from "./components/Home/Advisor's/SubBroker";
-import Branch from "./components/Home/Advisor's/Branch";
-import Investors from "./components/Investors";
 
-import Footer from "./components/common/Footer";
-// import Investor from "./components/common/Investor";
-import Navbar from "./components/common/Navbar";
-import PayOnline from "./components/PayOnline";
-import ClientTesti from "./components/ClientTesti";
-import AdvisorX from "./components/AdvisorX";
+import IFA from "./components/Advisor/IFA";
+import Corporate from "./components/Advisor/Corporate";
+import BackOffice from "./components/Advisor/BackOffice";
+import SubBroker from "./components/Advisor/SubBroker";
+import Branch from "./components/Advisor/Branch";
+import Investors from "./components/Investors/Investors";
+import PayOnline from "./components/PayOnline/PayOnline";
+import ClientTesti from "./components/ClientTesti/ClientTesti";
+import AdvisorX from "./components/AdvisorX/AdvisorX";
 import Refund from "./components/common/Refund";
 import PrivacyPolicy from "./components/common/PrivacyPolicy";
 import Index from "./components/index/Index";
-// import  from "./components/index/Index"
-// import Navigation from "./components/common/Navigation";
 
 function App() {
   return (
     <div className="   ">
       <Router>
         {/* <Navbar /> */}
-
         <Routes>
           <Route exact path={"/"} element={<Index />} />
           <Route exact path={"/advisorX"} element={<AdvisorX />} />

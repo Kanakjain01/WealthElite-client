@@ -10,7 +10,7 @@ import Section8 from './section8/Section8'
 import Section9 from './section9/Section9'
 import Section10 from './section10/Section10'
 import Section11 from './section11/Section11'
-import Footer from './common/Footer'
+import Footer from '../common/Footer'
 const Index = () => {
   return (
     <div>
@@ -26,6 +26,7 @@ const Index = () => {
         <Section10/>
         <Section11/>
         <Footer/>
+      
     </div>
   )
 }
