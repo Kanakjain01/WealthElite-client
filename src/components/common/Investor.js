@@ -89,7 +89,8 @@ const Investor = (props) => {
               </h1>
             </div>
             <div class="mx-auto mt-7 w-52 lg:mt-5 ">
-              <div class={`flex w-52 border ${
+              <div
+                class={`flex w-52 border ${
                   props.page == "ifa"
                     ? "border-blue-500"
                     : props.page == "corporate"
@@ -101,8 +102,23 @@ const Investor = (props) => {
                     : props.page == "subbroker"
                     ? "border-orange-400"
                     : ""
-                }   lg:w-72 lg:h-12 lg:-ml-10 `}>
-                <span class="inline-flex w-14 items-center border bg-green-100 px-3 text-gray-900 dark:text-gray-400 lg:w-11 ">
+                }   lg:w-72 lg:h-12 lg:-ml-10 `}
+              >
+                <span
+                  class={`inline-flex w-14 items-center border ${
+                    props.page == "ifa"
+                      ? "bg-slate-200"
+                      : props.page == "corporate"
+                      ? "bg-sky-50"
+                      : props.page == "backoffice"
+                      ? "bg-amber-50"
+                      : props.page == "branch"
+                      ? "bg-purple-50"
+                      : props.page == "subbroker"
+                      ? "bg-orange-50"
+                      : ""
+                  }  px-3 text-gray-900 dark:text-gray-400 lg:w-11 `}
+                >
                   <svg
                     class="w-7 lg:w-5"
                     xmlns="http://www.w3.org/2000/svg"
@@ -120,8 +136,36 @@ const Investor = (props) => {
                   placeholder="Username"
                 />
               </div>
-              <div class="flex w-52 border border-green-500 lg:w-72 lg:h-12 lg:-ml-10 ">
-                <span class="inline-flex w-14 items-center border bg-green-100 px-3 text-gray-900 dark:text-gray-400 lg:w-11 ">
+              <div
+                class={`flex w-52 border ${
+                  props.page == "ifa"
+                    ? "border-blue-500"
+                    : props.page == "corporate"
+                    ? "border-sky-400"
+                    : props.page == "backoffice"
+                    ? "border-amber-800"
+                    : props.page == "branch"
+                    ? "border-purple-700"
+                    : props.page == "subbroker"
+                    ? "border-orange-400"
+                    : ""
+                }  lg:w-72 lg:h-12 lg:-ml-10 `}
+              >
+                <span
+                  class={`inline-flex w-14 items-center border  ${
+                    props.page == "ifa"
+                      ? "bg-slate-200"
+                      : props.page == "corporate"
+                      ? "bg-sky-50"
+                      : props.page == "backoffice"
+                      ? "bg-amber-50"
+                      : props.page == "branch"
+                      ? "bg-purple-50"
+                      : props.page == "subbroker"
+                      ? "bg-orange-50"
+                      : ""
+                  }  px-3 text-gray-900 dark:text-gray-400 lg:w-11 `}
+                >
                   <svg
                     class="w-7 lg:w-5"
                     xmlns="http://www.w3.org/2000/svg"
@@ -159,12 +203,40 @@ const Investor = (props) => {
                 </label>
               </div>
               <div class="w-[45%] -mr-4 cursor-pointer">
-                <h1 class="font-medium text-green-600 lg:text-sm">
+                <h1
+                  class={`font-medium ${
+                    props.page == "ifa"
+                      ? "text-blue-800"
+                      : props.page == "corporate"
+                      ? "text-sky-400"
+                      : props.page == "backoffice"
+                      ? "text-amber-800"
+                      : props.page == "branch"
+                      ? "text-purple-900"
+                      : props.page == "subbroker"
+                      ? "text-orange-500"
+                      : ""
+                  }  lg:text-sm`}
+                >
                   Forgot Password ?
                 </h1>
               </div>
             </div>
-            <div class="mx-20  mt-3 w-24 rounded bg-green-600 py-3 text-center lg:w-16 lg:py-2  ">
+            <div
+              class={`mx-20  mt-3 w-24 rounded  ${
+                props.page == "ifa"
+                  ? "bg-blue-600"
+                  : props.page == "corporate"
+                  ? "bg-sky-400"
+                  : props.page == "backoffice"
+                  ? "bg-amber-700"
+                  : props.page == "branch"
+                  ? "bg-purple-900"
+                  : props.page == "subbroker"
+                  ? "bg-orange-500"
+                  : ""
+              } py-3 text-center lg:w-16 lg:py-2  `}
+            >
               <button class="text-2xl text-white lg:text-base">Login</button>
             </div>
           </div>
