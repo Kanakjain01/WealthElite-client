@@ -13,6 +13,8 @@ import AdvisorX from "./components/AdvisorX/AdvisorX";
 import Refund from "./components/common/Refund";
 import PrivacyPolicy from "./components/common/PrivacyPolicy";
 import Index from "./components/index/Index";
+import Payment from "./components/payment/Payment";
+import Registration from "./components/registration/Registration";
 
 function App() {
   return (
@@ -20,6 +22,8 @@ function App() {
       <Router>
         {/* <Navbar /> */}
         <Routes>
+          <Route exact path={"/pay"} element={<Payment/>} />
+          <Route exact path={"/signup"} element={<Registration/>} />
           <Route exact path={"/"} element={<Index />} />
           <Route exact path={"/advisorX"} element={<AdvisorX />} />
           <Route exact path={"/clientTesti"} element={<ClientTesti />} />
